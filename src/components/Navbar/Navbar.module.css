@@ -1,0 +1,6 @@
+.navbar {
+    border: 1px solid #333;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
