@@ -1,3 +1,10 @@
+.navbarContainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .navbar {
     border: 1px solid #333;
     width: 300px;

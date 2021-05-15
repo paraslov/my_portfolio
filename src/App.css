@@ -3,6 +3,10 @@ h1, h2, h3 {
     margin: 12px 0;
 }
 
+textarea {
+    resize: none;
+}
+
 .App {
 
 }

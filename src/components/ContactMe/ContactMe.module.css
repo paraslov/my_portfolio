@@ -1,0 +1,36 @@
+.contactMeBlock {
+    background-color: #ffe2ea;
+}
+
+.contactMeContainer {
+    min-height: 60vh;
+    flex-direction: column;
+}
+
+.contactMeForm {
+    width: 300px;
+    height: 150px;
+    background-color: #c3d7ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formItem {
+    width: 98%;
+    height: 15%;
+    background-color: #999;
+    border: 1px solid black;
+}
+
+.contactMeForm textarea {
+    height: 40%;
+}
+
+.btn {
+    width: 200px;
+    height: 40px;
+    font-size: 1.4rem;
+    background-color: #c3d7ff;
+}
