@@ -14,7 +14,7 @@ export const Footer = () => {
                     <a href={'#'} className={s.contactsItem}/>
                     <a href={'#'} className={s.contactsItem}/>
                 </div>
-                <h3>@2021 Para Slov. All rights reserved</h3>
+                <h3 className={s.rights}>@2021 Para Slov. All rights reserved</h3>
             </div>
         </div>
     )

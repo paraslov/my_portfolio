@@ -1,15 +1,15 @@
 .projectItem {
-    width: 500px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify-all;
+    text-align: justify;
 }
 
 .projectImg {
     width: 100%;
-    height: 300px;
+    height: 280px;
     background-color: #999;
     display: flex;
     justify-content: center;

@@ -22,3 +22,25 @@
     height: 60px;
     background-color: #777;
 }
+
+.rights {
+    font-size: 1rem;
+}
+
+/* Media queries ==============================================================>> */
+@media (max-width: 1023px) {
+    .contacts {
+        width: 60%;
+    }
+}
+@media (max-width: 767px) {
+    .contactsItem {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 374px) {
+    .rights {
+        font-size: 0.8rem;
+    }
+}

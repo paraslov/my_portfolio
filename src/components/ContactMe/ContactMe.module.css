@@ -8,7 +8,7 @@
 }
 
 .contactMeForm {
-    width: 300px;
+    width: 500px;
     height: 150px;
     background-color: #c3d7ff;
     display: flex;
@@ -33,4 +33,21 @@
     height: 40px;
     font-size: 1.4rem;
     background-color: #c3d7ff;
+}
+
+/* Media queries ==============================================================>> */
+@media (max-width: 767px)  {
+    .contactMeForm {
+        width: 300px;
+    }
+}
+@media (max-width: 374px)  {
+    .contactMeForm {
+        width: 280px;
+    }
+}
+@media (max-width: 359px)  {
+    .contactMeForm {
+        width: 250px;
+    }
 }

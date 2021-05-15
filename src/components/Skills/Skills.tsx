@@ -1,6 +1,6 @@
 import React from 'react'
-import s from './Skills.module.css'
 import commonStyles from '../../common/styles/style.module.css'
+import s from './Skills.module.css'
 import {Skill} from './Skill/Skill';
 
 

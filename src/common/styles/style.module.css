@@ -7,7 +7,7 @@
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: 5px auto;
     border: 1px solid #333333;
     display: flex;
     justify-content: space-between;

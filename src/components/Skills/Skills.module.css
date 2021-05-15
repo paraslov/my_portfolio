@@ -14,3 +14,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* Media queries ==============================================================>> */
+@media (max-width: 1023px)  {
+    .skills {
+        flex-wrap: wrap;
+    }
+}
