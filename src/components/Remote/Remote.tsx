@@ -1,6 +1,6 @@
 import React from 'react'
-import s from './Remote.module.css'
-import commonStyles from '../../common/styles/style.module.css'
+import s from './Remote.module.scss'
+import commonStyles from '../../common/styles/style.module.scss'
 
 
 export const Remote = () => {

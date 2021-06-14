@@ -1,6 +1,6 @@
 import React from 'react'
 import {Navbar} from '../Navbar/Navbar'
-import s from './Header.module.css'
+import s from './Header.module.scss'
 
 
 export const Header = () => {

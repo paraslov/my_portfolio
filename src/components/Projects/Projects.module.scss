@@ -1,5 +1,7 @@
+@import "./../../common/styles/variables.scss";
+
 .projectsBlock {
-    background-color: #f8f9fa;
+    background-color: $primaryBackgroundColor;
 }
 
 .projectsContainer {
@@ -10,9 +12,10 @@
 
 .projectsItems {
     width: 100%;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 

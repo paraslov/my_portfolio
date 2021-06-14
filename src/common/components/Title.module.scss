@@ -1,3 +1,5 @@
+@import "../../common/styles/variables";
+
 .title {
   font-size: 36px;
   font-weight: 500;
@@ -7,9 +9,9 @@
   &::after {
     position: absolute;
     content: '';
-    width: 60px;
-    height: 2px;
-    background-color: #343a40;
+    width: 80px;
+    height: 3px;
+    background-color: $decorColor;
     bottom: -30px;
     left: 50%;
     transform: translate(-50%, 50%);

@@ -1,6 +1,6 @@
 import React from 'react'
-import s from './ContactMe.module.css'
-import commonStyles from '../../common/styles/style.module.css'
+import s from './ContactMe.module.scss'
+import commonStyles from '../../common/styles/style.module.scss'
 import {Title} from '../../common/components/Title';
 
 

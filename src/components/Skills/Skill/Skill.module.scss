@@ -1,3 +1,5 @@
+@import "../../../common/styles/variables";
+
 .skillContainer {
     display: flex;
     flex-direction: column;
@@ -10,7 +12,7 @@
 .skillLogo {
     width: 50px;
     height: 50px;
-    color: aliceblue;
-    background-color: #333333;
+    color: $primaryColor;
+    background-color: $decorColor;
     transform: rotate(45deg);
 }

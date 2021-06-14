@@ -1,6 +1,6 @@
 import React from 'react'
-import commonStyles from '../../common/styles/style.module.css'
-import s from './Main.module.css'
+import commonStyles from '../../common/styles/style.module.scss'
+import s from './Main.module.scss'
 
 
 

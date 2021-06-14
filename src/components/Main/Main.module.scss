@@ -1,11 +1,25 @@
+@import "./../../common/styles/variables.scss";
+
 .mainBlock {
-    background-color: #ffd6e4;
+    background-color: #343a40;
+}
+
+.mainContainer {
+    justify-content: space-around;
 }
 
 .photo {
     width: 300px;
     height: 500px;
-    background-color: #c3d7ff;
+    background-color: $decorColor;
+}
+
+.aboutMe {
+    color: #fff;
+
+    h1 {
+        color: inherit;
+    }
 }
 
 
