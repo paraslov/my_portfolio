@@ -1,0 +1,12 @@
+@import './common/styles/variables.scss';
+
+h1, h2, h3 {
+    margin: 12px 0;
+    letter-spacing: 5px;
+    color: $primaryColor;
+    font-family: $primaryFont;
+}
+
+textarea {
+    resize: none;
+}
