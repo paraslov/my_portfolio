@@ -3,11 +3,12 @@
 .remoteBlock {
   background-color: $secondaryBackgroundColor;
   min-height: 40vh;
+
+  .remoteContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25vh;
+    text-align: center;
+  }
 }
 
-.remoteContainer {
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 25vh;
-  text-align: center;
-}

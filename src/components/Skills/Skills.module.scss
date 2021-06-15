@@ -1,25 +1,22 @@
 @import "./../../common/styles/variables.scss";
 
 .skillsBlock {
-    background-color: $secondaryBackgroundColor;
-}
+  background-color: $secondaryBackgroundColor;
 
-.skillsContainer {
+  .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
     min-height: 60%;
-}
 
-.skills {
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Media queries ==============================================================>> */
-@media (max-width: 1023px)  {
     .skills {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 1023px) {
         flex-wrap: wrap;
+      }
     }
+
+  }
 }

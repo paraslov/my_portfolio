@@ -1,56 +1,48 @@
 @import "./../../common/styles/variables.scss";
 
 .contactMeBlock {
-    background-color: $primaryBackgroundColor;
-}
+  background-color: $primaryBackgroundColor;
 
-.contactMeContainer {
+  .contactMeContainer {
     min-height: 60vh;
     flex-direction: column;
-}
 
-.contactMeForm {
-    width: 500px;
-    height: 150px;
-    background-color: $secondaryBackgroundColor;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.formItem {
-    width: 98%;
-    height: 15%;
-    background-color: #999;
-    border: 1px solid black;
-}
-
-.contactMeForm textarea {
-    height: 40%;
-}
-
-.btn {
-    font-family: $primaryFont;
-    width: 200px;
-    height: 40px;
-    font-size: 1.4rem;
-    background-color: $decorColor;
-}
-
-/* Media queries ==============================================================>> */
-@media (max-width: 767px)  {
     .contactMeForm {
+      width: 500px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .formItem {
+        width: 98%;
+        height: 15%;
+        background-color: $secondaryBackgroundColor;
+        border: 1px solid black;
+      }
+
+      textarea {
+        height: 40% !important;
+      }
+
+      @media (max-width: 767px) {
         width: 300px;
-    }
-}
-@media (max-width: 374px)  {
-    .contactMeForm {
+      }
+      @media (max-width: 374px) {
         width: 280px;
-    }
-}
-@media (max-width: 359px)  {
-    .contactMeForm {
+      }
+      @media (max-width: 359px) {
         width: 250px;
+      }
     }
+
+    .btn {
+      font-family: $primaryFont;
+      width: 200px;
+      height: 40px;
+      font-size: 1.4rem;
+      background-color: $decorColor;
+    }
+  }
 }

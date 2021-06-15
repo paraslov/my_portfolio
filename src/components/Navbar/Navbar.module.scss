@@ -5,22 +5,22 @@
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
-}
 
-.navbar {
-  height: 35px;
-  width: 500px;
-  display: flex;
-  justify-content: space-between;
-}
+  .navbar {
+    height: 35px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
 
-.navbar a {
-  font-size: 18px;
-  color: $primaryColor;
-  text-decoration: none;
-  transition: .1s;
+    a {
+      font-size: 18px;
+      color: $primaryColor;
+      text-decoration: none;
+      transition: .1s;
 
-  &:hover {
-    border-bottom: 3px solid $decorColor;
+      &:hover {
+        border-bottom: 3px solid $decorColor;
+      }
+    }
   }
 }

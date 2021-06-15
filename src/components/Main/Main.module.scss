@@ -1,31 +1,33 @@
 @import "./../../common/styles/variables.scss";
 
 .mainBlock {
-    background-color: #343a40;
-}
+  background-color: #212529;
 
-.mainContainer {
+  .mainContainer {
     justify-content: space-around;
-}
 
-.photo {
-    width: 300px;
-    height: 500px;
-    background-color: $decorColor;
-}
+    .aboutMe {
+      color: #fff;
 
-.aboutMe {
-    color: #fff;
+      span, p {
+        font-family: $secondaryFont;
+      }
 
-    h1 {
+      h1 {
         color: inherit;
+      }
     }
-}
 
-
-/* Media queries ==============================================================>> */
-@media (max-width: 740px)  {
-    .mainContainer {
-        justify-content: center;
+    .photo {
+      width: 300px;
+      height: 500px;
+      background-color: $decorColor;
+      background-image: url('../../assets/img/mainImg/me.jpg');
+      background-size: cover;
+      background-position: center;
     }
+    @media (max-width: 740px) {
+      justify-content: center;
+    }
+  }
 }
