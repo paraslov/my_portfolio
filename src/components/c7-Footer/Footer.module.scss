@@ -5,11 +5,10 @@
 
   .footerContainer {
     flex-direction: column;
-    min-height: 25vh;
+    min-height: 30vh;
     margin-bottom: 20px;
 
     .contacts {
-      border: 1px solid #333;
       width: 40%;
       display: flex;
       justify-content: space-between;
@@ -20,7 +19,6 @@
       .contactsItem {
         width: 60px;
         height: 60px;
-        background-color: #777;
         @media (max-width: 767px) {
           width: 30px;
           height: 30px;

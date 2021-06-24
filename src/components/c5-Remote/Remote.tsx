@@ -8,7 +8,7 @@ export const Remote = () => {
         <div className={`${commonStyles.block} ${s.remoteBlock}`}>
             <div className={`${commonStyles.container} ${s.remoteContainer}`}>
                 <h2>Remote work is acceptable for me.</h2>
-                <a className={commonStyles.btnLink} href="#">Hire Me</a>
+                <a className={commonStyles.btnLink} href="#contactMe">Hire Me</a>
             </div>
         </div>
     )
