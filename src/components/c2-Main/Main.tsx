@@ -2,6 +2,9 @@ import React from 'react'
 import commonStyles from '../../common/styles/style.module.scss'
 import s from './Main.module.scss'
 import Particles from 'react-tsparticles'
+import Tilt from 'react-parallax-tilt'
+import ReactTypingEffect from 'react-typing-effect'
+import { Fade } from "react-awesome-reveal"
 
 const particlesParams = {
     particles: {
@@ -45,14 +48,18 @@ export const Main = () => {
         <div className={`${s.mainBlock} ${commonStyles.block}`}>
             <Particles options={particlesParams} className={s.particles}/>
             <div className={`${s.mainContainer} ${commonStyles.container}`}>
-                <div className={s.aboutMe}>
-                    <span>Hi, there</span>
-                    <h1>I'm Sergey Balanov</h1>
-                    <p>Frontend developer</p>
-                </div>
-                <div className={s.photo}>
-                    <div className={s.photoFrame}/>
-                </div>
+                <Fade direction={'left'} triggerOnce>
+                    <div className={s.aboutMe}>
+                        <span>Hi, there</span>
+                        <span>I'm Sergey <span>Balanov</span></span>
+                        <span><ReactTypingEffect text={'Frontend developer.'}/></span>
+                    </div>
+                </Fade>
+                <Fade direction={'right'} triggerOnce><Tilt>
+                    <div className={s.photo}>
+                        <div className={s.photoFrame}/>
+                    </div>
+                </Tilt></Fade>
             </div>
         </div>
     )
