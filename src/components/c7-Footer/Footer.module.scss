@@ -1,7 +1,13 @@
+@import "../../common/styles/variables";
+
 .footerBlock {
   background-color: #f5df4e;
   min-height: 40vh;
   align-items: flex-end;
+
+  .footerFade {
+    width: 100%;
+  }
 
   .footerContainer {
     flex-direction: column;
@@ -17,8 +23,12 @@
       }
 
       .contactsItem {
+        color: $primaryColor;
         width: 60px;
         height: 60px;
+        &:hover {
+          color: rgba(52, 58, 64, 0.7);
+        }
         @media (max-width: 767px) {
           width: 30px;
           height: 30px;
@@ -28,8 +38,9 @@
 
     .rights {
       font-size: 1rem;
-      @media (max-width: 374px) {
+      @media (max-width: 415px) {
         font-size: 0.8rem;
+        text-align: center;
       }
     }
   }

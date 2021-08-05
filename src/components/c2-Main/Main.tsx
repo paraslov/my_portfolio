@@ -45,14 +45,14 @@ const particlesParams = {
 
 export const Main = () => {
     return (
-        <div className={`${s.mainBlock} ${commonStyles.block}`}>
+        <div id={'main'} className={`${s.mainBlock} ${commonStyles.block}`}>
             <Particles options={particlesParams} className={s.particles}/>
             <div className={`${s.mainContainer} ${commonStyles.container}`}>
                 <Fade direction={'left'} triggerOnce>
                     <div className={s.aboutMe}>
                         <span>Hi, there</span>
                         <span>I'm Sergey <span>Balanov</span></span>
-                        <span><ReactTypingEffect text={'Frontend developer.'}/></span>
+                        <span><ReactTypingEffect typingDelay={1500} eraseDelay={3000} text={'Frontend developer.'}/></span>
                     </div>
                 </Fade>
                 <Fade direction={'right'} triggerOnce><Tilt>

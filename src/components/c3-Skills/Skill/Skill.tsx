@@ -12,7 +12,9 @@ type SkillPropsType = {
 export const Skill: React.FC<SkillPropsType> = (props) => {
     return (
         <div className={s.skillContainer}>
-            <FontAwesomeIcon icon={props.icon} className={s.skillLogo}/>
+            <div className={s.skillLogoContainer}>
+                <FontAwesomeIcon icon={props.icon} className={s.skillLogo}/>
+            </div>
             <h3>{props.title}</h3>
             <span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolor esse itaque maiores molestiae omnis praesentium qui repellat tempora vero. Nobis, officia vero?

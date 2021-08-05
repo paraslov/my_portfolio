@@ -8,11 +8,21 @@
   text-align: justify;
   padding: 10px;
 
-  .skillLogo {
-    font-size: 70px;
-    color: $primaryColor;
+  .skillLogoContainer {
+    transform: rotate(45deg);
+    height: 80px;
+    width: 80px;
     background-color: $decorColor;
-    //transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+
+    .skillLogo {
+      font-size: 70px;
+      color: $primaryColor;
+      transform: rotate(-45deg);
+    }
   }
 }
 

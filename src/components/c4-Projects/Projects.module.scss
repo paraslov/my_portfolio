@@ -9,15 +9,19 @@
         align-items: center;
     }
 
-    .projectsItems {
+    .projectsItemsFade {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
 
-        @media screen and (max-width: 1023px) {
-            justify-content: center;
+        .projectsItems {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 1023px) {
+                justify-content: center;
+            }
         }
     }
 }
