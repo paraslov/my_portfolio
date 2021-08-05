@@ -11,17 +11,63 @@
     position: absolute;
     right: 10px;
     top: 10px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     color: #e8e8e8;
     background-color: rgba(33, 37, 41, 0.5);
     font-size: 27px;
     text-align: center;
     z-index: 101;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: #e8e8e8;
+      width: 28px;
+      height: 3px;
+      top: 12px;
+      left: 10px;
+      transition: 0.5s;
+    }
+
+    span {
+      content: '';
+      position: absolute;
+      background-color: #e8e8e8;
+      width: 28px;
+      height: 3px;
+      top: 24px;
+      left: 10px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: #e8e8e8;
+      width: 28px;
+      height: 3px;
+      top: 36px;
+      left: 10px;
+      transition: 0.5s;
+    }
   }
 
   .openBtn {
     background-color: transparent;
+
+    &:before {
+      transform: rotate(45deg);
+      top: 18px;
+    }
+
+    span {
+      display: none;
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+      top: 18px;
+    }
   }
 
   .navbar {

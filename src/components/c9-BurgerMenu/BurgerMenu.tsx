@@ -11,11 +11,8 @@ export const BurgerMenu = () => {
 
     return (
         <div className={s.burgerMenuContainer}>
-            {isOpen ? <div className={`${s.burgerBtn} ${isOpen ? s.openBtn : ''}`}
-                  onClick={onClickHandler}>☒</div>
-            :
-                <div className={`${s.burgerBtn} ${isOpen ? s.openBtn : ''}`}
-                     onClick={onClickHandler}>☰</div>}
+            <div className={`${s.burgerBtn} ${isOpen ? s.openBtn : ''}`}
+                 onClick={onClickHandler}><span/></div>
             <div className={`${s.navbar} ${isOpen ? s.open : ''}`}>
                 <Link to={'main'} smooth>Main</Link>
                 <Link to={'skills'} smooth>Skills</Link>
