@@ -1,0 +1,63 @@
+@import "./../../common/styles/variables.scss";
+
+.burgerMenuContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+
+  .burgerBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    color: #e8e8e8;
+    background-color: rgba(33, 37, 41, 0.5);
+    font-size: 27px;
+    text-align: center;
+    z-index: 101;
+  }
+
+  .openBtn {
+    background-color: transparent;
+  }
+
+  .navbar {
+    height: 0;
+    padding: 15px 0;
+    background-color: rgba(33, 37, 41, 0.9);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(0, -150px);
+    transition: 0.7s;
+
+    a {
+      font-family: $primaryFont;
+      cursor: pointer;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: $primaryBackgroundColor;
+      text-decoration: none;
+      transition: .1s;
+
+      &:hover {
+        color: $decorColor;
+        border-bottom: 3px solid $decorColor;
+      }
+    }
+  }
+
+  .open {
+    transform: translate(0, 0);
+    height: 150px;
+  }
+
+  @media screen and (min-width: 598px) {
+    display: none;
+  }
+}
