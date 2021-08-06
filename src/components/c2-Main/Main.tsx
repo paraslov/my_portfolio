@@ -55,7 +55,7 @@ export const Main = () => {
                         <span><ReactTypingEffect typingDelay={1500} eraseDelay={3000} text={'Frontend developer.'}/></span>
                     </div>
                 </Fade>
-                <Fade direction={'right'} triggerOnce><Tilt>
+                <Fade direction={'right'} triggerOnce><Tilt transitionSpeed={1600}>
                     <div className={s.photo}>
                         <div className={s.photoFrame}/>
                     </div>

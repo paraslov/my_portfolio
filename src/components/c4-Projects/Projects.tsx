@@ -31,13 +31,17 @@ export const Projects = () => {
                              placeat quos, recusandae repellat, unde ut!Lorem ipsum dolor sit amet, consectetur 
                              adipisicing elit. Alias consequuntur ea eligendi esse est et, ex illum ipsum laborum maxime
                               modi molestiae odit perferendis placeat quos, recusandae repellat, unde ut!`}
-                                 style={socialStyle}/>
+                                 style={socialStyle}
+                                 projectHref={'https://github.com/paraslov/it-inc_social-network'}
+                        />
 
                         <Project title={'To do list project'}
                                  description={`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur 
                              ea eligendi esse est et, ex illum ipsum laborum maxime modi molestiae odit perferendis 
                              placeat quos, recusandae repellat, unde ut!`}
-                                 style={todoStyle}/>
+                                 style={todoStyle}
+                                 projectHref={'https://github.com/paraslov/it-inc_todolist'}
+                        />
                     </div>
                 </Fade>
             </div>

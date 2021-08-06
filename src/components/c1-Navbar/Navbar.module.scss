@@ -28,9 +28,16 @@
         border-bottom: 3px solid $decorColor;
       }
     }
+    .active {
+      color: $decorColor;
+      border-bottom: 3px solid $decorColor;
+    }
   }
 
   @media screen and (max-width: 599px) {
+    display: none;
+  }
+  @media screen and (orientation: landscape) and (max-width: 824px) {
     display: none;
   }
 }

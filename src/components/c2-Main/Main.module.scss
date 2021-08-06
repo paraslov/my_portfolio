@@ -19,6 +19,7 @@
 
     .aboutMe {
       color: #fff;
+      margin-bottom: 50px;
 
       span:nth-child(2) {
         font-family: $primaryFont;
@@ -47,10 +48,7 @@
         font-family: $primaryFont;
       }
 
-      @media screen and (max-width: 769px) {
-        margin-bottom: 50px;
-      }
-      @media (max-width: 415px) {
+      @media (max-width: 560px) {
         margin-bottom: 30px;
         text-align: center;
         span:nth-child(2) {

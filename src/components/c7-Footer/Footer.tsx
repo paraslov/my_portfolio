@@ -16,16 +16,16 @@ export const Footer = () => {
                 <div className={`${commonStyles.container} ${s.footerContainer}`}>
                     <h2>Sergey Balanov</h2>
                     <div className={s.contacts}>
-                        <a href={'#'}>
+                        <a href={'https://github.com/paraslov'}>
                             <FontAwesomeIcon icon={faGithub} className={s.contactsItem}/>
                         </a>
-                        <a href={'#'}>
+                        <a href={'https://www.youtube.com/channel/UC-ikUsjn0OTGHjumm35HbhQ'}>
                             <FontAwesomeIcon icon={faYoutube} className={s.contactsItem}/>
                         </a>
-                        <a href={'#'}>
+                        <a href={'mailto:tsfoe@mail.ru'}>
                             <FontAwesomeIcon icon={faMailBulk} className={s.contactsItem}/>
                         </a>
-                        <a href={'#'}>
+                        <a href={'tel:+79636656564'}>
                             <FontAwesomeIcon icon={faPhone} className={s.contactsItem}/>
                         </a>
                     </div>
