@@ -49,10 +49,13 @@ export const ContactMe = () => {
         validate,
         onSubmit: values => {
             setBtnDisable(true)
-            const {name, email, message} = values
+            let {name, email, message} = values
 
             axios.post('https://smtp-email-folio.herokuapp.com/send-message', {name, email, message})
-                .then(() => setBtnDisable(false))
+                .then(() => {
+                    setBtnDisable(false)
+                    formik.resetForm()
+                })
                 .catch((err) => console.log(err))
         }
     })
