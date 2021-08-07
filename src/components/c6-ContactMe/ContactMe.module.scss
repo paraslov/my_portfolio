@@ -26,7 +26,6 @@
 
     .contactMeForm {
       width: 500px;
-      height: 300px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -43,7 +42,11 @@
       }
 
       textarea {
-        height: 40% !important;
+        height: 100px !important;
+      }
+
+      .errorField {
+        color: #343a40;
       }
 
       @media (max-width: 767px) {

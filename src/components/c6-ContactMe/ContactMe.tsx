@@ -49,7 +49,6 @@ export const ContactMe = () => {
         validate,
         onSubmit: values => {
             setBtnDisable(true)
-            console.log(values)
             const {name, email, message} = values
 
             axios.post('https://smtp-email-folio.herokuapp.com/send-message', {name, email, message})
@@ -67,8 +66,14 @@ export const ContactMe = () => {
                 <Fade direction={'up'} triggerOnce>
                     <form className={s.contactMeForm} onSubmit={formik.handleSubmit}>
                         <input className={s.formItem} type="text" placeholder={'Your name'} {...formik.getFieldProps('name')}/>
+                        {formik.touched.name && formik.errors.name ?
+                            <span className={s.errorField}>{formik.errors.name}</span> : null}
                         <input className={s.formItem} type="text" placeholder={'Your email'} {...formik.getFieldProps('email')}/>
+                        {formik.touched.email && formik.errors.email ?
+                            <span className={s.errorField}>{formik.errors.email}</span> : null}
                         <textarea className={s.formItem} placeholder={'Your message'} {...formik.getFieldProps('message')}/>
+                        {formik.touched.message && formik.errors.message ?
+                            <span className={s.errorField}>{formik.errors.message}</span> : null}
                         <button className={s.btn} type={'submit'} disabled={btnDisable}>Contact Me</button>
                     </form>
                 </Fade>
