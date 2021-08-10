@@ -6,7 +6,9 @@ import {faMailBulk} from '@fortawesome/free-solid-svg-icons/faMailBulk'
 import {faGithub} from '@fortawesome/free-brands-svg-icons/faGithub'
 import {faYoutube} from '@fortawesome/free-brands-svg-icons/faYoutube'
 import {faPhone} from '@fortawesome/free-solid-svg-icons/faPhone'
+
 import {Fade} from 'react-awesome-reveal'
+import {faLinkedinIn, faTelegramPlane} from '@fortawesome/free-brands-svg-icons'
 
 
 export const Footer = () => {
@@ -21,6 +23,12 @@ export const Footer = () => {
                         </a>
                         <a href={'https://www.youtube.com/channel/UC-ikUsjn0OTGHjumm35HbhQ'}>
                             <FontAwesomeIcon icon={faYoutube} className={s.contactsItem}/>
+                        </a>
+                        <a href={'https://t.me/srjoyme'}>
+                            <FontAwesomeIcon icon={faTelegramPlane} className={s.contactsItem}/>
+                        </a>
+                        <a href={'https://www.linkedin.com/in/sergey-balanov-b770841ba/'}>
+                            <FontAwesomeIcon icon={faLinkedinIn} className={s.contactsItem}/>
                         </a>
                         <a href={'mailto:tsfoe@mail.ru'}>
                             <FontAwesomeIcon icon={faMailBulk} className={s.contactsItem}/>
