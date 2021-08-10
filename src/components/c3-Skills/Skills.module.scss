@@ -15,8 +15,8 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      @media (max-width: 1023px) {
-        flex-wrap: wrap;
+      @media (max-width: 622px) {
+        justify-content: center;
       }
     }
 

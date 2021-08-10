@@ -15,7 +15,7 @@
     margin-bottom: 20px;
 
     .contacts {
-      width: 40%;
+      width: 60%;
       display: flex;
       justify-content: space-between;
       @media (max-width: 1023px) {
@@ -29,10 +29,14 @@
         &:hover {
           color: rgba(52, 58, 64, 0.7);
         }
-        @media (max-width: 767px) {
+        @media (max-width: 701px) {
           width: 30px;
           height: 30px;
         }
+      }
+
+      @media screen and (max-width: 1001px) {
+        width: 80%;
       }
     }
 
