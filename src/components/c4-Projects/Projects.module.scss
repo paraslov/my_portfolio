@@ -7,12 +7,14 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        margin: 40px 0 60px 0;
     }
 
     .projectsItemsFade {
         width: 100%;
 
         .projectsItems {
+            margin-top: 40px;
             width: 100%;
             display: flex;
             justify-content: space-between;

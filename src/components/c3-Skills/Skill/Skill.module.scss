@@ -1,28 +1,53 @@
 @import "../../../common/styles/variables";
 
 .skillContainer {
+  font-family: $secondaryFont;
+  font-size: 18px;
+  line-height: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   text-align: justify;
-  padding: 10px;
+  width: 220px;
+  padding: 15px 30px;
+  margin-bottom: 40px;
 
-  .skillLogoContainer {
-    transform: rotate(45deg);
-    height: 80px;
-    width: 80px;
-    background-color: $decorColor;
+  .skillTitleSection {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5px;
+    flex-direction: column;
 
-    .skillLogo {
-      font-size: 70px;
-      color: $primaryColor;
-      transform: rotate(-45deg);
+    .skillLogoContainer {
+      transform: rotate(45deg);
+      height: 80px;
+      width: 80px;
+      background-color: $decorColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5px;
+
+      .skillLogo {
+        height: 60px;
+        width: 60px;
+        color: $primaryColor;
+        transform: rotate(-45deg);
+        @media screen and (max-width: 415px) {
+          font-size: 40px;
+        }
+      }
+
+      @media screen and (max-width: 415px) {
+        height: 60px;
+        width: 60px;
+      }
     }
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 15px;
   }
 }
 
