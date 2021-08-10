@@ -9,8 +9,13 @@ import jestImg from '../../assets/img/logos/skills/jest.png'
 import softSkillsImg from '../../assets/img/logos/skills/softSkills.png'
 import englishImg from '../../assets/img/logos/skills/english.png'
 
+type TSkillDescription = {
+    title: string
+    icon: string
+    description: string
+}
 
-export const skills = [
+export const skillsDB: TSkillDescription[] = [
     {title: 'TypeScript', icon: tsImg, description: 'I love TypeScript and use it in most of my projects'},
     {title: 'React JS', icon: reactImg, description: 'I\'m engaged in programming with React JS'},
     {title: 'html&css', icon: htmlImg, description: 'I use html3, css5, sass, module css, adoptive layout'},
@@ -21,10 +26,4 @@ export const skills = [
     {title: 'Jest', icon: jestImg, description: 'I enjoy using TDD and keep tests updated with the code. Also I used Storybook for testing components'},
     {title: 'Soft skills', icon: softSkillsImg, description: 'Good communication skills, flexibility, resilience to stress, fast learning, dedicated, open-minded, constantly developing'},
     {title: 'English', icon: englishImg, description: 'Intermediate. Searching solutions, reading tech literature, watching tech videos confidently.'},
-
-
-
-
-
-    
 ]

@@ -4,12 +4,12 @@ import s from './Skills.module.scss'
 import {Skill} from './Skill/Skill'
 import {Title} from '../../common/components/Title'
 import {Fade} from 'react-awesome-reveal'
-import {skills} from './skillsDB'
+import {skillsDB} from './skillsDB'
 
 
 export const Skills = () => {
 
-    const skillsList = skills.map(s => <Skill title={s.title} icon={s.icon} description={s.description}/>)
+    const skillsList = skillsDB.map((s, i) => <Skill key={i} title={s.title} icon={s.icon} description={s.description}/>)
 
     return (
         <div id={'skills'} className={`${commonStyles.block} ${s.skillsBlock}`}>

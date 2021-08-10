@@ -3,19 +3,18 @@ import s from './Projects.module.scss'
 import commonStyles from '../../common/styles/style.module.scss'
 import {Project} from './Project/Project'
 import {Title} from '../../common/components/Title'
-import socNetImg from '../../assets/img/projectsImg/SocNet.jpg'
-import todoImg from '../../assets/img/projectsImg/todoImg3.jpg'
 import {Fade} from 'react-awesome-reveal'
+import {projects} from './projectsDB'
 
 
 export const Projects = () => {
 
-    const socialStyle = {
-        backgroundImage: `url(${socNetImg})`
-    }
-    const todoStyle = {
-        backgroundImage: `url(${todoImg})`
-    }
+    const projectsList = projects.map((p, i) => <Project
+        key={i}
+        title={p.title}
+        description={p.description}
+        projectHref={p.ref}
+        style={p.style}/>)
 
     return (
         <div id={'projects'} className={`${s.projectsBlock} ${commonStyles.block}`}>
@@ -25,23 +24,7 @@ export const Projects = () => {
                 </Fade>
                 <Fade direction={'up'} triggerOnce className={s.projectsItemsFade}>
                     <div className={s.projectsItems}>
-                        <Project title={'Social Network'}
-                                 description={`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur 
-                             ea eligendi esse est et, ex illum ipsum laborum maxime modi molestiae odit perferendis 
-                             placeat quos, recusandae repellat, unde ut!Lorem ipsum dolor sit amet, consectetur 
-                             adipisicing elit. Alias consequuntur ea eligendi esse est et, ex illum ipsum laborum maxime
-                              modi molestiae odit perferendis placeat quos, recusandae repellat, unde ut!`}
-                                 style={socialStyle}
-                                 projectHref={'https://github.com/paraslov/it-inc_social-network'}
-                        />
-
-                        <Project title={'To do list project'}
-                                 description={`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur 
-                             ea eligendi esse est et, ex illum ipsum laborum maxime modi molestiae odit perferendis 
-                             placeat quos, recusandae repellat, unde ut!`}
-                                 style={todoStyle}
-                                 projectHref={'https://github.com/paraslov/it-inc_todolist'}
-                        />
+                        {projectsList}
                     </div>
                 </Fade>
             </div>

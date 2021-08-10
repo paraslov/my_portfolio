@@ -6,7 +6,6 @@ import {faMailBulk} from '@fortawesome/free-solid-svg-icons/faMailBulk'
 import {faGithub} from '@fortawesome/free-brands-svg-icons/faGithub'
 import {faYoutube} from '@fortawesome/free-brands-svg-icons/faYoutube'
 import {faPhone} from '@fortawesome/free-solid-svg-icons/faPhone'
-
 import {Fade} from 'react-awesome-reveal'
 import {faLinkedinIn, faTelegramPlane} from '@fortawesome/free-brands-svg-icons'
 

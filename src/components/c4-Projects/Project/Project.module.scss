@@ -42,14 +42,16 @@
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 21px;
     letter-spacing: 1px;
     margin: 0 0 5px;
   }
 
-  .projectDescription {
-    font: $secondaryFont;
-    padding: 0 10px;
+  .description {
+    font-family: $secondaryFont;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+    width: 90%;
   }
 }
 

@@ -4,7 +4,7 @@ import s from './Skill.module.scss'
 
 type SkillPropsType = {
     title: string
-    icon: any
+    icon: string
     description: string
 }
 
