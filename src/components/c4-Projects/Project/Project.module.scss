@@ -19,6 +19,7 @@
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
@@ -37,7 +38,11 @@
 
     .btn {
       @extend .btnLink;
+      letter-spacing: 0.3px;
       background-color: rgba(248, 249, 250, 0.7);
+      &:first-child {
+        margin-bottom: 40px;
+      }
     }
   }
 

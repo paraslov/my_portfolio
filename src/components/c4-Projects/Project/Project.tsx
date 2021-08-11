@@ -12,7 +12,8 @@ export const Project: React.FC<TProjectProps> = ({title, description, style, pro
     return (
         <div className={s.projectItem}>
             <div className={s.projectImg} style={style}>
-                <a className={s.btn} href={projectHref}>View</a>
+                <a className={s.btn} href={projectHref}>View project</a>
+                <a className={s.btn} href={projectHref}>View source code</a>
             </div>
             <h3>{title}</h3>
             <div className={s.description}>
