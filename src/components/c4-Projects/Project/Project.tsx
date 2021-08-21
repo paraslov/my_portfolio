@@ -6,14 +6,15 @@ type TProjectProps = {
     title: string
     description: { implemented: string[], techsUsed: string[] }
     projectHref: string
+    codeHref: string
     style: { [key: string]: string }
 }
-export const Project: React.FC<TProjectProps> = ({title, description, style, projectHref}) => {
+export const Project: React.FC<TProjectProps> = ({title, description, style, projectHref, codeHref}) => {
     return (
         <div className={s.projectItem}>
             <div className={s.projectImg} style={style}>
-                <a className={s.btn} href={projectHref}>View project</a>
-                <a className={s.btn} href={projectHref}>View source code</a>
+                <a className={s.btn} href={projectHref} target={'_blank'}>View project</a>
+                <a className={s.btn} href={codeHref} target={'_blank'}>View source code</a>
             </div>
             <h3>{title}</h3>
             <div className={s.description}>

@@ -5,7 +5,7 @@ export type TProjectDescription = {
     title: string
     description: {implemented: string[], techsUsed: string[]}
     style: {backgroundImage: string},
-    ref: string
+    refs: { project: string, code: string }
 }
 
 export const projects: TProjectDescription[] = [
@@ -16,7 +16,7 @@ export const projects: TProjectDescription[] = [
             techsUsed: ['TS;', 'react;', 'redux, redux-thunk;', 'axios']
         },
         style: {backgroundImage: `url(${socNetImg})`},
-        ref: 'https://github.com/paraslov/it-inc_social-network'
+        refs: {project: 'https://paraslov.github.io/it-inc_social-network', code: 'https://github.com/paraslov/it-inc_social-network'}
     },
     {
         title: 'Todo list',
@@ -25,6 +25,6 @@ export const projects: TProjectDescription[] = [
             techsUsed: ['TS;', 'redux-toolkit;', 'material UI;', 'formik;', 'unit tests;', 'storybook;', 'snapshot;', 'hot reloading;', 'axios;', 'react;', 'redux, redux-thunk']
         },
         style: {backgroundImage: `url(${todoImg})`},
-        ref: 'https://github.com/paraslov/it-inc_todolist'
+        refs: {project: 'https://paraslov.github.io/it-inc_todolist', code: 'https://github.com/paraslov/it-inc_todolist'}
     },
 ]
