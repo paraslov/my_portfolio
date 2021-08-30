@@ -13,7 +13,8 @@ export const Projects = () => {
         key={i}
         title={p.title}
         description={p.description}
-        refs={p.refs}
+        projectHref={p.refs.project}
+        codeHref={p.refs.code}
         style={p.style}/>)
 
     return (

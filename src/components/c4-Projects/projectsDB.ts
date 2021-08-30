@@ -1,11 +1,11 @@
 import socNetImg from '../../assets/img/projectsImg/SocNet.jpg'
-import todoImg from '../../assets/img/projectsImg/todoImg.jpg'
+import todoImg from '../../assets/img/projectsImg/todoImg3.jpg'
 
 export type TProjectDescription = {
     title: string
     description: {implemented: string[], techsUsed: string[]}
     style: {backgroundImage: string},
-    refs: {project: string, sourceCode: string}
+    refs: { project: string, code: string }
 }
 
 export const projects: TProjectDescription[] = [
@@ -16,7 +16,7 @@ export const projects: TProjectDescription[] = [
             techsUsed: ['TS;', 'react;', 'redux, redux-thunk;', 'axios']
         },
         style: {backgroundImage: `url(${socNetImg})`},
-        refs: {project: 'https://www.paraslovsb.ru', sourceCode: 'https://github.com/paraslov/it-inc_social-network'}
+        refs: {project: 'https://paraslov.github.io/it-inc_social-network', code: 'https://github.com/paraslov/it-inc_social-network'}
     },
     {
         title: 'Todo list',
@@ -25,6 +25,6 @@ export const projects: TProjectDescription[] = [
             techsUsed: ['TS;', 'redux-toolkit;', 'material UI;', 'formik;', 'unit tests;', 'storybook;', 'snapshot;', 'hot reloading;', 'axios;', 'react;', 'redux, redux-thunk']
         },
         style: {backgroundImage: `url(${todoImg})`},
-        refs: {project: 'https://www.paraslovsb.ru', sourceCode: 'https://github.com/paraslov/it-inc_todolist'}
+        refs: {project: 'https://paraslov.github.io/it-inc_todolist', code: 'https://github.com/paraslov/it-inc_todolist'}
     },
 ]
