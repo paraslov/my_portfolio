@@ -1,5 +1,5 @@
 import socNetImg from '../../assets/img/projectsImg/SocNet.jpg'
-import todoImg from '../../assets/img/projectsImg/todoImg3.jpg'
+import todoImg from '../../assets/img/projectsImg/todoImg.jpg'
 
 export type TProjectDescription = {
     title: string
