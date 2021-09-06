@@ -5,11 +5,12 @@ import {Title} from '../../common/components/Title'
 import {Fade} from 'react-awesome-reveal'
 import axios from 'axios'
 import {FormikErrors, useFormik} from 'formik'
+import {Preloader} from '../../common/components/Preloader/Preloader'
 
 
 export const ContactMe = () => {
 
-    const [btnDisable, setBtnDisable] = useState(false)
+    const [isFetching, setIsFetching] = useState(false)
 
     //* =========================================================================== Formik validate =================>>
     type TFormikErrors = {
@@ -48,15 +49,18 @@ export const ContactMe = () => {
         },
         validate,
         onSubmit: values => {
-            setBtnDisable(true)
+            setIsFetching(true)
             let {name, email, message} = values
 
             axios.post('https://smtp-email-folio.herokuapp.com/send-message', {name, email, message})
                 .then(() => {
-                    setBtnDisable(false)
+                    setIsFetching(false)
                     formik.resetForm()
                 })
-                .catch((err) => console.log(err))
+                .catch((err) => {
+                    console.log(err)
+                    setIsFetching(false)
+                })
         }
     })
 
@@ -68,6 +72,7 @@ export const ContactMe = () => {
                 </Fade>
                 <Fade direction={'up'} triggerOnce>
                     <form className={s.contactMeForm} onSubmit={formik.handleSubmit}>
+                        {isFetching && <Preloader left={'40%'} top={'10%'} size={'80px'}/>}
                         <input className={s.formItem} type="text" placeholder={'Your name'} {...formik.getFieldProps('name')}/>
                         {formik.touched.name && formik.errors.name ?
                             <span className={s.errorField}>{formik.errors.name}</span> : null}
@@ -77,7 +82,7 @@ export const ContactMe = () => {
                         <textarea className={s.formItem} placeholder={'Your message'} {...formik.getFieldProps('message')}/>
                         {formik.touched.message && formik.errors.message ?
                             <span className={s.errorField}>{formik.errors.message}</span> : null}
-                        <button className={s.btn} type={'submit'} disabled={btnDisable}>Contact Me</button>
+                        <button className={s.btn} type={'submit'} disabled={isFetching}>Contact Me</button>
                     </form>
                 </Fade>
             </div>
